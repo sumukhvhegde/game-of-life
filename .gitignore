@@ -1,0 +1,7 @@
+game_of_life
+
+*.o
+
+.vscode/
+
+compile_commands.json

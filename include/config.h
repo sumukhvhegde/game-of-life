@@ -12,6 +12,4 @@
 #define GRID_COLS     (WINDOW_WIDTH / CELL_SIZE)
 #define GRID_ROWS     (WINDOW_HEIGHT / CELL_SIZE)
 
-#define SHOW_GRID     0
-
 #endif

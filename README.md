@@ -13,6 +13,7 @@ A simple implementation of **Conway's Game of Life** written in **C** using�
 | Left Mouse Button  | Draw live cells         |
 | Right Mouse Button | Erase cells             |
 | Space              | Play / Pause simulation |
+| G                  | Enable / Disable grid   |
 | R                  | Randomize grid          |
 | C                  | Clear the grid          |
 

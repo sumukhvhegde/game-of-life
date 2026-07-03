@@ -29,6 +29,10 @@ void app_update(void) {
         grid_randomize(&grid);
     }
 
+    if (IsKeyPressed(KEY_G)) {
+        renderer_toggle_grid();
+    }
+
     input_update(&grid);
 
     if (is_running) {

@@ -23,10 +23,12 @@ void app_update(void) {
 
     if (IsKeyPressed(KEY_C)) {
         grid_clear(&grid);
+        simulation_reset_generation();
     }
 
     if (IsKeyPressed(KEY_R)) {
         grid_randomize(&grid);
+        simulation_reset_generation();
     }
 
     if (IsKeyPressed(KEY_G)) {

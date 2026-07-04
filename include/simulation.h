@@ -3,6 +3,10 @@
 
 #include "grid.h"
 
-void simulation_step(Grid *grid);
+void simulation_step(Grid* grid);
+
+unsigned long simulation_get_generation(void);
+
+void simulation_reset_generation(void);
 
 #endif

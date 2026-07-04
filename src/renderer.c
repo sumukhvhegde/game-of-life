@@ -1,6 +1,7 @@
 #include "renderer.h"
 
 #include "config.h"
+#include "simulation.h"
 
 #include "raylib.h"
 
@@ -16,12 +17,21 @@ void renderer_draw(const Grid *grid) {
                 CELL_SIZE
             };
             
-            if (render_grid)
+            if (render_grid) {
                 DrawRectangleLinesEx(cell, 0.5f, DARKGRAY);
-        
+            }
+
             if (grid_get_cell(grid, row, col)) {
                 DrawRectangleRec(cell, WHITE);
             }
+
+            DrawText(
+                TextFormat("Generation: %lu", simulation_get_generation()),
+                10,
+                10,
+                20,
+                GREEN
+            );
         }
     }
 }

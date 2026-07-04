@@ -1,5 +1,7 @@
 #include "simulation.h"
 
+static unsigned long generation = 0;
+
 static int count_neighbors(const Grid* grid, int row, int col) {
     int count = 0;
     
@@ -41,4 +43,14 @@ void simulation_step(Grid* grid) {
     }
 
     grid_swap_buffers(grid);
+
+    generation++;
+}
+
+unsigned long simulation_get_generation(void) {
+    return generation;
+}
+
+void simulation_reset_generation(void) {
+    generation = 0;
 }
